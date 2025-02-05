@@ -18,13 +18,13 @@ function App() {
             onClick={() =>
               setIndexOfOpenQuestion((prev) => (prev === index ? null : index))
             }
-            className={`mr-4 flex justify-between gap-2 max-lg:mr-2 ${
+            className={`mr-4 flex justify-between gap-2 text-dark-purple transition-colors duration-1000 hover:text-sunny-purple max-lg:mr-2 ${
               indexOfOpenQuestion !== index && index !== content.length - 1
                 ? "border-b-2 border-solid border-b-gray-200 pb-4"
                 : ""
             }`}
           >
-            <h2 className="hover:text-sunny-purple text-left text-lg font-semibold text-dark-purple transition-colors duration-1000 max-first:text-base">
+            <h2 className="text-left text-lg font-semibold max-first:text-base">
               {question}
             </h2>
             <img
